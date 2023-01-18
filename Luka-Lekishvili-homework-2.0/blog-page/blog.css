@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Rowdies&display=swap");
+::-moz-selection {
+  background: rgb(248, 195, 96);
+}
+::selection {
+  background: rgb(248, 195, 96);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(15, 18, 26) !important;
+}
+
+.navigation-arrow {
+  padding: 15px 20px;
+  border-radius: 5px;
+  background-color: rgb(8, 9, 10);
+  color: white;
+  position: fixed;
+  z-index: 2;
+  bottom: 20px;
+  right: 20px;
+  transition: 0.4s;
+}
+
+.navigation-arrow:hover {
+  background-color: rgb(248, 195, 96);
+  color: black;
+}
+
+.nav-image {
+  height: 400px;
+  background-image: url(../images/night-sky.jpg);
+  background-size: cover;
+}
+.nav-image .nav .nav-active {
+  transform: translate(0%);
+}
+.nav-image .nav .nav-title {
+  display: flex;
+  text-decoration: none;
+  margin-top: 15px;
+  margin-left: 40px;
+}
+.nav-image .nav .nav-title h1 {
+  font-family: "Rowdies", sans-serif;
+  color: rgb(248, 195, 96);
+  text-decoration: none;
+  font-size: 40px;
+  margin-top: 25px;
+}
+.nav-image .nav .nav-title .hexagon-icon {
+  background-image: url(../images/nares-logo.png);
+  background-size: cover;
+  width: 70px;
+  height: 80px;
+}
+.nav-image .nav .nav-links {
+  display: flex;
+  list-style-type: none;
+  position: absolute;
+  right: 0px;
+  top: 55px;
+}
+.nav-image .nav .nav-links li {
+  margin-right: 80px;
+}
+.nav-image .nav .nav-links li a {
+  text-decoration: none;
+  color: rgb(240, 234, 234);
+}
+.nav-image .nav .nav-links li a:hover {
+  color: rgb(248, 195, 96);
+}
+.nav-image .nav .nav-links .dropdown:hover .dropdown-content {
+  display: flex;
+  transition: 0.2s;
+}
+.nav-image .nav .nav-links .dropdown-content {
+  color: rgb(248, 195, 96);
+  list-style-type: none;
+  position: absolute;
+  background-color: rgb(15, 18, 26);
+  right: 20px;
+  top: 20px;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid rgb(240, 234, 234);
+  display: none;
+  transition: 0.2s;
+}
+.nav-image .nav .nav-links .dropdown-content li {
+  margin-top: 10px;
+  margin-left: 40px;
+}
+.nav-image .nav .nav-hamburger {
+  position: absolute;
+  right: 30px;
+  top: 55px;
+  display: none;
+}
+.nav-image .nav .nav-hamburger .hamburger-line1 {
+  width: 20px;
+  height: 2px;
+  margin-top: 4px;
+  background-color: rgb(240, 234, 234);
+  transition: all 0.5s ease;
+}
+.nav-image .nav .nav-hamburger .hamburger-line2 {
+  width: 20px;
+  height: 2px;
+  margin-top: 4px;
+  background-color: rgb(240, 234, 234);
+  transition: all 0.5s ease;
+}
+.nav-image .nav .nav-hamburger .hamburger-line3 {
+  width: 20px;
+  height: 2px;
+  margin-top: 4px;
+  background-color: rgb(240, 234, 234);
+  transition: all 0.5s ease;
+}
+.nav-image .nav .nav-hamburger:hover {
+  cursor: pointer;
+}
+.nav-image .nav .toggleCl .hamburger-line1 {
+  transform: rotate(-45deg) translate(-4px, 5px);
+}
+.nav-image .nav .toggleCl .hamburger-line2 {
+  opacity: 0;
+}
+.nav-image .nav .toggleCl .hamburger-line3 {
+  transform: rotate(45deg) translate(-4px, -5px);
+}
+.nav-image .nav-helper {
+  color: white;
+  margin-top: 150px;
+  margin-left: 50px;
+}
+
+.blog-gallery {
+  margin-top: 75px;
+  height: 1400px;
+  background-color: rgb(15, 18, 26);
+}
+.blog-gallery .blog-component {
+  margin-top: 25px;
+}
+.blog-gallery .blog-component .blog-image {
+  background-image: url(../images/forest-path.jpg);
+  background-size: cover;
+  width: 600px;
+  height: 300px;
+  margin-left: 25px;
+}
+.blog-gallery .blog-component .blog-image .blog-hover-icon {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 18, 26, 0.5);
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+.blog-gallery .blog-component .blog-image .blog-hover-icon i {
+  color: white;
+}
+.blog-gallery .blog-component .blog-image:hover {
+  cursor: pointer;
+}
+.blog-gallery .blog-component .blog-image:hover .blog-hover-icon {
+  display: flex;
+}
+.blog-gallery .blog-component .blog-image2 {
+  background-image: url(../images/forest-road.jpg);
+  background-size: cover;
+  width: 600px;
+  height: 300px;
+  margin-left: 25px;
+}
+.blog-gallery .blog-component .blog-image2 .blog-hover-icon {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 18, 26, 0.5);
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+.blog-gallery .blog-component .blog-image2 .blog-hover-icon i {
+  color: white;
+}
+.blog-gallery .blog-component .blog-image2:hover {
+  cursor: pointer;
+}
+.blog-gallery .blog-component .blog-image2:hover .blog-hover-icon {
+  display: flex;
+}
+.blog-gallery .blog-component .blog-image3 {
+  background-image: url(../images/forest.jpg);
+  background-size: cover;
+  width: 600px;
+  height: 300px;
+  margin-left: 25px;
+}
+.blog-gallery .blog-component .blog-image3 .blog-hover-icon {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 18, 26, 0.5);
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+.blog-gallery .blog-component .blog-image3 .blog-hover-icon i {
+  color: white;
+}
+.blog-gallery .blog-component .blog-image3:hover {
+  cursor: pointer;
+}
+.blog-gallery .blog-component .blog-image3:hover .blog-hover-icon {
+  display: flex;
+}
+.blog-gallery .blog-component .blog-image4 {
+  background-image: url(../images/gamepad.jpg);
+  background-size: cover;
+  width: 600px;
+  height: 300px;
+  margin-left: 25px;
+}
+.blog-gallery .blog-component .blog-image4 .blog-hover-icon {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 18, 26, 0.5);
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+.blog-gallery .blog-component .blog-image4 .blog-hover-icon i {
+  color: white;
+}
+.blog-gallery .blog-component .blog-image4:hover {
+  cursor: pointer;
+}
+.blog-gallery .blog-component .blog-image4:hover .blog-hover-icon {
+  display: flex;
+}
+.blog-gallery .blog-component .blog-image5 {
+  background-image: url(../images/grass.jpg);
+  background-size: cover;
+  width: 600px;
+  height: 300px;
+  margin-left: 25px;
+}
+.blog-gallery .blog-component .blog-image5 .blog-hover-icon {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 18, 26, 0.5);
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+.blog-gallery .blog-component .blog-image5 .blog-hover-icon i {
+  color: white;
+}
+.blog-gallery .blog-component .blog-image5:hover {
+  cursor: pointer;
+}
+.blog-gallery .blog-component .blog-image5:hover .blog-hover-icon {
+  display: flex;
+}
+.blog-gallery .blog-component .blog-image6 {
+  background-image: url(../images/keyboad.jpg);
+  background-size: cover;
+  width: 600px;
+  height: 300px;
+  margin-left: 25px;
+}
+.blog-gallery .blog-component .blog-image6 .blog-hover-icon {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 18, 26, 0.5);
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+.blog-gallery .blog-component .blog-image6 .blog-hover-icon i {
+  color: white;
+}
+.blog-gallery .blog-component .blog-image6:hover {
+  cursor: pointer;
+}
+.blog-gallery .blog-component .blog-image6:hover .blog-hover-icon {
+  display: flex;
+}
+.blog-gallery .blog-component h3 {
+  color: white;
+  margin-left: 25px;
+  margin-top: 25px;
+}
+.blog-gallery .blog-component h5 {
+  margin-left: 25px;
+  color: rgb(248, 195, 96);
+}
+.blog-gallery .blog-component h5 a {
+  color: rgb(248, 195, 96);
+  text-decoration: none;
+}
+
+.footer {
+  height: 400px;
+  background-color: rgb(19, 22, 32);
+  display: grid;
+  place-items: center;
+}
+.footer .footer-title {
+  display: flex;
+  text-decoration: none;
+  margin-right: 50px;
+}
+.footer .footer-title h1 {
+  font-family: "Rowdies", sans-serif;
+  color: rgb(248, 195, 96);
+  text-decoration: none;
+  font-size: 40px;
+  margin-top: 25px;
+}
+.footer .footer-title .hexagon-icon {
+  background-image: url(../images/nares-logo.png);
+  background-size: cover;
+  width: 70px;
+  height: 80px;
+}/*# sourceMappingURL=blog.css.map */

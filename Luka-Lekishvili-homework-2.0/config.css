@@ -1,0 +1,214 @@
+@media only screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden !important;
+  }
+  .slider-active-content {
+    left: 100px !important;
+  }
+  .slider-second-content {
+    right: 100px !important;
+  }
+  .slider-third-content {
+    left: 100px !important;
+  }
+  .nav-links {
+    position: absolute;
+    right: 10px;
+    height: 92vh;
+    background-color: rgb(15, 18, 26);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    width: 60%;
+  }
+  .nav-links .dropdown-content {
+    opacity: 0;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .nav-hamburger {
+    display: block !important;
+    cursor: pointer;
+  }
+  .carousel-inner h1 {
+    font-size: 20px;
+  }
+  .carousel-inner button {
+    padding: 5px !important;
+  }
+  .about-left {
+    margin-top: 100px !important;
+  }
+  .about-image {
+    width: 300px !important;
+    height: 250px !important;
+  }
+  .gallery {
+    height: 3500px !important;
+  }
+  .gallery .row {
+    justify-content: center;
+  }
+  .gallery .gallery-filters li {
+    margin-left: 10px;
+  }
+  .gallery .gallery-title h1 {
+    font-size: 30px;
+    margin-top: 25px;
+    margin-right: 25px !important;
+  }
+  .gallery .gallery-title h3 {
+    font-size: 20px;
+    margin-right: 25px !important;
+  }
+  .gallery .gallery-image {
+    margin-right: 75px !important;
+  }
+  .gallery .gallery-image2 {
+    margin-right: 75px !important;
+  }
+  .gallery .gallery-image3 {
+    margin-right: 75px !important;
+  }
+  .gallery .gallery-image4 {
+    margin-right: 75px !important;
+  }
+  .gallery .gallery-image5 {
+    margin-right: 75px !important;
+  }
+  .gallery .gallery-image6 {
+    margin-right: 75px !important;
+  }
+  .card-carousel-title h1 {
+    margin-top: 0px !important;
+  }
+  .card-carousel-title h3 {
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .nav-title {
+    margin-left: 5px !important;
+  }
+  .nav-title h1 {
+    opacity: 0;
+  }
+  .slider-image-active {
+    height: 500px !important;
+  }
+  .slider-image-active img {
+    height: 500px !important;
+  }
+  .slider-image-secondary {
+    height: 500px !important;
+  }
+  .slider-image-secondary img {
+    height: 500px !important;
+  }
+  .slider-image-secondary button {
+    margin-left: 150px !important;
+  }
+  .slider-image-third {
+    height: 500px !important;
+  }
+  .slider-image-third img {
+    height: 500px !important;
+  }
+  .about-left {
+    margin-top: 50px !important;
+  }
+  .about-right {
+    margin-top: 25px !important;
+  }
+  .statistics {
+    margin-top: 75px;
+    height: 1150px !important;
+  }
+  .gallery {
+    padding: 0px !important;
+  }
+  .gallery-filters .gallery-filters-links {
+    display: none !important;
+  }
+  .gallery-filters .gallery-dropdown {
+    display: block !important;
+    margin-top: 100px;
+    background-color: rgb(248, 195, 96) !important;
+    border-radius: 5px;
+    margin-left: 35px;
+  }
+  .gallery-filters .gallery-dropdown .dropdown-menu {
+    background-color: rgb(248, 195, 96);
+    color: black;
+  }
+  .gallery-image {
+    margin-left: 40px !important;
+  }
+  .gallery-image2 {
+    margin-left: 40px !important;
+  }
+  .gallery-image3 {
+    margin-left: 40px !important;
+  }
+  .gallery-image4 {
+    margin-left: 40px !important;
+  }
+  .gallery-image5 {
+    margin-left: 40px !important;
+  }
+  .gallery-image6 {
+    margin-left: 40px !important;
+  }
+  .carousel-logo .same {
+    margin-left: 0px !important;
+  }
+  .card-carousel-element {
+    margin-left: 40px !important;
+    margin-top: 25px !important;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .logo1 {
+    width: 175px !important;
+  }
+  .logo2 {
+    width: 175px !important;
+  }
+  .logo3 {
+    width: 175px !important;
+  }
+  .logo4 {
+    width: 175px !important;
+  }
+  .logo5 {
+    width: 175px !important;
+  }
+  .logo6 {
+    width: 175px !important;
+  }
+}
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translate(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translate(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}/*# sourceMappingURL=config.css.map */

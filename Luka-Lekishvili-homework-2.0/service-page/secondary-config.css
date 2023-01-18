@@ -1,0 +1,66 @@
+@media only screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden !important;
+  }
+  .nav-links {
+    position: absolute;
+    right: 10px;
+    height: 92vh;
+    background-color: rgb(15, 18, 26);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    width: 60%;
+  }
+  .nav-links .dropdown-content {
+    opacity: 0;
+  }
+  .nav-hamburger {
+    display: block !important;
+    cursor: pointer;
+  }
+  .benefit-section {
+    height: 1800px !important;
+  }
+  .benefit-section .row .col-lg-4 {
+    margin-left: 25px;
+    margin-top: 25px;
+  }
+  .complete-section {
+    height: 1050px;
+  }
+  .marketing-section {
+    margin-top: 150px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .nav-title {
+    margin-left: 0px !important;
+  }
+  .nav-title h1 {
+    opacity: 0;
+  }
+  .nav-helper {
+    margin-left: 0px !important;
+  }
+  .benefit-section .row {
+    margin-left: 15px !important;
+  }
+  .complete-section {
+    height: 900px !important;
+  }
+  .complete-section .complete-gallery .complete-image1 {
+    width: 300px !important;
+    height: 200px !important;
+    margin-left: 75px !important;
+  }
+  .complete-section .complete-gallery .complete-image2 {
+    width: 300px !important;
+    height: 200px !important;
+    left: 100px !important;
+  }
+}/*# sourceMappingURL=secondary-config.css.map */

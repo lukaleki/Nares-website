@@ -1,0 +1,707 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Rowdies&display=swap");
+::-moz-selection {
+  background: rgb(248, 195, 96);
+}
+::selection {
+  background: rgb(248, 195, 96);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  background-color: rgb(15, 18, 26) !important;
+}
+
+.navigation-arrow {
+  padding: 15px 20px;
+  border-radius: 5px;
+  background-color: rgb(8, 9, 10);
+  color: white;
+  position: fixed;
+  z-index: 2;
+  bottom: 20px;
+  right: 20px;
+  transition: 0.4s;
+}
+
+.navigation-arrow:hover {
+  background-color: rgb(248, 195, 96);
+  color: black;
+}
+
+.homepage .nav-active {
+  transform: translate(0%);
+}
+.homepage .nav {
+  display: flex;
+  position: absolute;
+  z-index: 2;
+}
+.homepage .nav .nav-title {
+  display: flex;
+  text-decoration: none;
+  margin-top: 15px;
+  margin-left: 40px;
+}
+.homepage .nav .nav-title h1 {
+  font-family: "Rowdies", sans-serif;
+  color: rgb(248, 195, 96);
+  text-decoration: none;
+  font-size: 40px;
+  margin-top: 25px;
+}
+.homepage .nav .nav-title .hexagon-icon {
+  background-image: url(./images/nares-logo.png);
+  background-size: cover;
+  width: 70px;
+  height: 80px;
+}
+.homepage .nav .nav-links {
+  display: flex;
+  list-style-type: none;
+  position: absolute;
+  right: 0px;
+  top: 55px;
+}
+.homepage .nav .nav-links li {
+  margin-right: 80px;
+}
+.homepage .nav .nav-links li a {
+  text-decoration: none;
+  color: rgb(240, 234, 234);
+}
+.homepage .nav .nav-links li a:hover {
+  color: rgb(248, 195, 96);
+}
+.homepage .nav .nav-links .dropdown:hover .dropdown-content {
+  display: flex;
+  transition: 0.2s;
+}
+.homepage .nav .nav-links .dropdown-content {
+  color: rgb(248, 195, 96);
+  list-style-type: none;
+  position: absolute;
+  background-color: rgb(15, 18, 26);
+  right: 20px;
+  top: 20px;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid rgb(240, 234, 234);
+  display: none;
+  transition: 0.2s;
+}
+.homepage .nav .nav-links .dropdown-content li {
+  margin-top: 10px;
+  margin-left: 40px;
+}
+.homepage .nav .nav-hamburger {
+  position: absolute;
+  right: 30px;
+  top: 55px;
+  display: none;
+}
+.homepage .nav .nav-hamburger .hamburger-line1 {
+  width: 20px;
+  height: 2px;
+  margin-top: 4px;
+  background-color: rgb(240, 234, 234);
+  transition: all 0.5s ease;
+}
+.homepage .nav .nav-hamburger .hamburger-line2 {
+  width: 20px;
+  height: 2px;
+  margin-top: 4px;
+  background-color: rgb(240, 234, 234);
+  transition: all 0.5s ease;
+}
+.homepage .nav .nav-hamburger .hamburger-line3 {
+  width: 20px;
+  height: 2px;
+  margin-top: 4px;
+  background-color: rgb(240, 234, 234);
+  transition: all 0.5s ease;
+}
+.homepage .nav .nav-hamburger:hover {
+  cursor: pointer;
+}
+.homepage .nav .toggleCl .hamburger-line1 {
+  transform: rotate(-45deg) translate(-4px, 5px);
+}
+.homepage .nav .toggleCl .hamburger-line2 {
+  opacity: 0;
+}
+.homepage .nav .toggleCl .hamburger-line3 {
+  transform: rotate(45deg) translate(-4px, -5px);
+}
+.homepage .slide {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.homepage .slide .slider-image-active {
+  width: 100%;
+  height: 700px;
+}
+.homepage .slide .slider-image-active .slider-active-content {
+  position: absolute;
+  top: 250px;
+  left: 230px;
+  color: white;
+}
+.homepage .slide .slider-image-active .slider-active-content button {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: rgb(243, 194, 104);
+  border: none;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+.homepage .slide .slider-image-active .slider-active-content button:hover {
+  background-color: black;
+  color: white;
+}
+.homepage .slide .slider-image-secondary {
+  width: 100%;
+  height: 700px;
+}
+.homepage .slide .slider-image-secondary .slider-second-content {
+  position: absolute;
+  top: 250px;
+  right: 230px;
+  color: white;
+  text-align: end;
+}
+.homepage .slide .slider-image-secondary .slider-second-content button {
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 350px;
+  background-color: transparent;
+  border: 1px solid wheat;
+  color: wheat;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+.homepage .slide .slider-image-secondary .slider-second-content button:hover {
+  background-color: wheat;
+  color: black;
+}
+.homepage .slide .slider-image-third {
+  width: 100%;
+  height: 700px;
+}
+.homepage .slide .slider-image-third .slider-third-content {
+  position: absolute;
+  top: 250px;
+  left: 230px;
+  color: white;
+}
+.homepage .slide .slider-image-third .slider-third-content button {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: rgb(243, 194, 104);
+  border: none;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+.homepage .slide .slider-image-third .slider-third-content button:hover {
+  background-color: black;
+  color: wheat;
+}
+
+.about-section {
+  height: 600px;
+  background-color: rgb(15, 18, 26);
+}
+.about-section .about-left {
+  margin-top: 250px;
+}
+.about-section .about-left h1 {
+  color: rgb(248, 195, 96);
+  margin-left: 30px;
+}
+.about-section .about-left h3 {
+  color: white;
+  margin-left: 30px;
+}
+.about-section .about-left p {
+  color: rgb(240, 234, 234);
+  margin-left: 30px;
+}
+.about-section .about-right {
+  margin-top: 100px;
+}
+.about-section .about-right .about-image {
+  margin-left: 25px;
+  background-image: url(./images/forest.jpg);
+  background-size: cover;
+  width: 500px;
+  height: 400px;
+  box-shadow: 31px 30px 0px rgb(255, 193, 77);
+}
+
+.statistics {
+  background-color: rgb(19, 22, 32);
+  height: 350px;
+  text-align: center;
+}
+.statistics i {
+  color: wheat;
+  margin-bottom: 20px;
+}
+.statistics h1 {
+  color: white;
+}
+.statistics h4 {
+  color: rgb(240, 234, 234);
+}
+.statistics .statistics-col {
+  margin-top: 100px;
+}
+
+.gallery {
+  background-color: rgb(10, 12, 18);
+  height: 1400px;
+}
+.gallery .gallery-filters .gallery-filters-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.gallery .gallery-filters .gallery-filters-links a {
+  color: rgb(240, 234, 234);
+  text-decoration: none;
+}
+.gallery .gallery-filters .gallery-filters-links li {
+  margin-top: 40px;
+}
+.gallery .gallery-title {
+  text-align: end;
+  margin-top: 50px;
+}
+.gallery .gallery-title h1 {
+  color: wheat;
+  margin-right: 75px;
+}
+.gallery .gallery-title h3 {
+  color: white;
+  margin-right: 75px;
+  font-family: "rowdies", sans-serif;
+}
+.gallery .gallery-rows {
+  margin-top: 50px;
+  margin-left: 15px;
+  display: grid;
+}
+.gallery .gallery-rows .gallery-image {
+  background-image: url(./images/filter-image.jpg);
+  background-size: cover;
+  margin: 15px;
+  width: 400px;
+  height: 500px;
+  padding: 0px;
+}
+.gallery .gallery-rows .gallery-image .gallery-hover-icons {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 18, 26, 0.5);
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+.gallery .gallery-rows .gallery-image .gallery-hover-icons i {
+  color: black;
+  background-color: rgb(248, 195, 96);
+  border-radius: 100px;
+  padding: 10px;
+  margin: 5px;
+}
+.gallery .gallery-rows .gallery-image .gallery-hover-icons i:hover {
+  color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(245, 222, 179, 0.9);
+}
+.gallery .gallery-rows .gallery-image:hover .gallery-hover-icons {
+  display: flex;
+}
+.gallery .gallery-rows .gallery-image2 {
+  background-image: url(./images/filter-image2.jpg);
+  background-size: cover;
+  margin: 15px;
+  width: 400px;
+  height: 500px;
+  padding: 0px;
+}
+.gallery .gallery-rows .gallery-image2 .gallery-hover-icons {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 18, 26, 0.5);
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+.gallery .gallery-rows .gallery-image2 .gallery-hover-icons i {
+  color: black;
+  background-color: rgb(248, 195, 96);
+  border-radius: 100px;
+  padding: 10px;
+  margin: 5px;
+}
+.gallery .gallery-rows .gallery-image2 .gallery-hover-icons i:hover {
+  color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(245, 222, 179, 0.9);
+}
+.gallery .gallery-rows .gallery-image2:hover .gallery-hover-icons {
+  display: flex;
+}
+.gallery .gallery-rows .gallery-image3 {
+  background-image: url(./images/filter-image3.jpg);
+  background-size: cover;
+  margin: 15px;
+  width: 400px;
+  height: 500px;
+  padding: 0px;
+}
+.gallery .gallery-rows .gallery-image3 .gallery-hover-icons {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 18, 26, 0.5);
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+.gallery .gallery-rows .gallery-image3 .gallery-hover-icons i {
+  color: black;
+  background-color: rgb(248, 195, 96);
+  border-radius: 100px;
+  padding: 10px;
+  margin: 5px;
+}
+.gallery .gallery-rows .gallery-image3 .gallery-hover-icons i:hover {
+  color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(245, 222, 179, 0.9);
+}
+.gallery .gallery-rows .gallery-image3:hover .gallery-hover-icons {
+  display: flex;
+}
+.gallery .gallery-rows .gallery-image4 {
+  background-image: url(./images/filter-image4.jpg);
+  background-size: cover;
+  margin: 15px;
+  width: 400px;
+  height: 500px;
+  padding: 0px;
+}
+.gallery .gallery-rows .gallery-image4 .gallery-hover-icons {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 18, 26, 0.5);
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+.gallery .gallery-rows .gallery-image4 .gallery-hover-icons i {
+  color: black;
+  background-color: rgb(248, 195, 96);
+  border-radius: 100px;
+  padding: 10px;
+  margin: 5px;
+}
+.gallery .gallery-rows .gallery-image4 .gallery-hover-icons i:hover {
+  color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(245, 222, 179, 0.9);
+}
+.gallery .gallery-rows .gallery-image4:hover .gallery-hover-icons {
+  display: flex;
+}
+.gallery .gallery-rows .gallery-image5 {
+  background-image: url(./images/filter-image5.jpg);
+  background-size: cover;
+  margin: 15px;
+  width: 400px;
+  height: 500px;
+  padding: 0px;
+}
+.gallery .gallery-rows .gallery-image5 .gallery-hover-icons {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 18, 26, 0.5);
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+.gallery .gallery-rows .gallery-image5 .gallery-hover-icons i {
+  color: black;
+  background-color: rgb(248, 195, 96);
+  border-radius: 100px;
+  padding: 10px;
+  margin: 5px;
+}
+.gallery .gallery-rows .gallery-image5 .gallery-hover-icons i:hover {
+  color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(245, 222, 179, 0.9);
+}
+.gallery .gallery-rows .gallery-image5:hover .gallery-hover-icons {
+  display: flex;
+}
+.gallery .gallery-rows .gallery-image6 {
+  background-image: url(./images/filter-image6.jpg);
+  background-size: cover;
+  margin: 15px;
+  width: 400px;
+  height: 500px;
+  padding: 0px;
+}
+.gallery .gallery-rows .gallery-image6 .gallery-hover-icons {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 18, 26, 0.5);
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+.gallery .gallery-rows .gallery-image6 .gallery-hover-icons i {
+  color: black;
+  background-color: rgb(248, 195, 96);
+  border-radius: 100px;
+  padding: 10px;
+  margin: 5px;
+}
+.gallery .gallery-rows .gallery-image6 .gallery-hover-icons i:hover {
+  color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(245, 222, 179, 0.9);
+}
+.gallery .gallery-rows .gallery-image6:hover .gallery-hover-icons {
+  display: flex;
+}
+
+.carousel-logo {
+  background-color: rgb(15, 17, 25);
+  height: 400px;
+}
+.carousel-logo .logo1 {
+  background-image: url(./images/logo1.png);
+  background-size: cover;
+  width: 200px;
+  height: 100px;
+  margin-top: 125px;
+  margin-left: 15px;
+}
+.carousel-logo .logo2 {
+  background-image: url(./images/logo2.png);
+  background-size: cover;
+  width: 200px;
+  height: 100px;
+  margin-top: 125px;
+  margin-left: 15px;
+}
+.carousel-logo .logo3 {
+  background-image: url(./images/logo3.png);
+  background-size: cover;
+  width: 200px;
+  height: 100px;
+  margin-top: 125px;
+  margin-left: 15px;
+}
+.carousel-logo .logo4 {
+  background-image: url(./images/logo4.png);
+  background-size: cover;
+  width: 200px;
+  height: 100px;
+  margin-top: 125px;
+  margin-left: 15px;
+}
+.carousel-logo .logo5 {
+  background-image: url(./images/logo5.png);
+  background-size: cover;
+  width: 200px;
+  height: 100px;
+  margin-top: 125px;
+  margin-left: 15px;
+}
+.carousel-logo .logo6 {
+  background-image: url(./images/logo6.png);
+  background-size: cover;
+  width: 200px;
+  height: 100px;
+  margin-top: 125px;
+  margin-left: 15px;
+}
+
+.card-carousel-image {
+  height: 1000px;
+  background-image: url(./images/grass.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-carousel-image .card-carousel-title {
+  text-align: center;
+}
+.card-carousel-image .card-carousel-title h1 {
+  margin-top: 150px;
+  color: rgb(248, 195, 96);
+}
+.card-carousel-image .card-carousel-title h3 {
+  color: white;
+}
+.card-carousel-image .card-carousel-element {
+  background-color: rgb(15, 18, 26);
+  margin-top: 200px;
+  margin-left: 10px;
+  width: 400px;
+  height: 400px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.card-carousel-image .card-carousel-element .card-title {
+  margin-left: 20px;
+  display: flex;
+}
+.card-carousel-image .card-carousel-element .card-title .card-image {
+  background-image: url(./images/cpp1.jpg);
+  background-size: cover;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border: 1px solid rgb(248, 195, 96);
+}
+.card-carousel-image .card-carousel-element .card-title .card-image2 {
+  background-image: url(./images/cpp2.jpg);
+  background-size: cover;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border: 1px solid rgb(248, 195, 96);
+}
+.card-carousel-image .card-carousel-element .card-title .card-image3 {
+  background-image: url(./images/cpp3.jpg);
+  background-size: cover;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border: 1px solid rgb(248, 195, 96);
+}
+.card-carousel-image .card-carousel-element .card-title h4 {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+.card-carousel-image .card-carousel-element .card-content {
+  width: 85%;
+  margin: 20px;
+}
+.card-carousel-image .card-carousel-element .card-content .card-5-stars {
+  margin-top: 80px;
+}
+
+.contact-section {
+  height: 600px;
+  background-color: rgb(15, 18, 26);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-section .contact-wrapper {
+  width: 60%;
+}
+.contact-section .contact-wrapper .contact-title {
+  text-align: center;
+  margin-top: 100px;
+}
+.contact-section .contact-wrapper .contact-title h1 {
+  color: rgb(248, 195, 96);
+}
+.contact-section .contact-wrapper .contact-title h3 {
+  color: white;
+}
+.contact-section .contact-wrapper .contact-input {
+  margin-top: 50px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact-section .contact-wrapper .contact-input .contact-row {
+  display: flex;
+}
+.contact-section .contact-wrapper .contact-input .contact-row input {
+  color: white;
+  margin: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  outline: none;
+  background-color: transparent;
+  border: 2px solid rgb(34, 37, 51);
+}
+.contact-section .contact-wrapper .contact-input .contact-subject {
+  color: white;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  outline: none;
+  background-color: transparent;
+  border: 2px solid rgb(34, 37, 51);
+}
+.contact-section .contact-wrapper .contact-input textarea {
+  color: white;
+  margin-top: 10px;
+  width: 100%;
+  outline: none;
+  background-color: transparent;
+  border: 2px solid rgb(34, 37, 51);
+  resize: none;
+}
+.contact-section .contact-wrapper .contact-input button {
+  margin-top: 15px;
+  padding: 20px 30px;
+  background-color: rgb(248, 195, 96);
+  border: none;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+.contact-section .contact-wrapper .contact-input button:hover {
+  background-color: black;
+  color: rgb(248, 195, 96);
+}
+
+.footer {
+  height: 400px;
+  background-color: rgb(19, 22, 32);
+  display: grid;
+  place-items: center;
+}
+.footer .footer-title {
+  display: flex;
+  text-decoration: none;
+  margin-right: 50px;
+}
+.footer .footer-title h1 {
+  font-family: "Rowdies", sans-serif;
+  color: rgb(248, 195, 96);
+  text-decoration: none;
+  font-size: 40px;
+  margin-top: 25px;
+}
+.footer .footer-title .hexagon-icon {
+  background-image: url(./images/nares-logo.png);
+  background-size: cover;
+  width: 70px;
+  height: 80px;
+}/*# sourceMappingURL=style.css.map */

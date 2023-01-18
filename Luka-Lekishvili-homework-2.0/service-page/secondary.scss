@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rowdies&display=swap');
+
+$pri-text-color: rgb(240, 234, 234);
+$sec-text-color: rgb(248, 195, 96);
+$pri-color:rgb(15,18,26);
+$pri-color-lighter: rgb(19, 22, 32);
+
+::selection {
+    background: $sec-text-color;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: $pri-color !important;
+}
+
+.navigation-arrow {
+    padding: 15px 20px;
+    border-radius: 5px;
+    background-color: rgb(8, 9, 10);
+    color: white;
+    position: fixed;
+    z-index: 2;
+    bottom: 20px;
+    right: 20px;
+    transition: 0.4s;
+}
+.navigation-arrow:hover {
+    background-color: $sec-text-color;
+    color: black;
+}
+
+.nav-image {
+    height: 400px;
+    background-image: url(../images/night-sky.jpg);
+    background-size: cover;
+    
+    .nav {
+
+        .nav-active {
+            transform: translate(0%);
+        }
+        .nav-title {
+          display: flex;
+          text-decoration: none;
+          margin-top: 15px;
+          margin-left: 40px;
+          h1 {
+          font-family: 'Rowdies', sans-serif;
+          color: $sec-text-color;
+          text-decoration: none;
+          font-size: 40px;
+          margin-top: 25px;
+      }
+          .hexagon-icon {
+              background-image: url(../images/nares-logo.png);
+              background-size: cover;
+              width: 70px;
+              height: 80px;
+          }
+      }
+          .nav-links {
+              display: flex;
+              list-style-type: none;
+              position: absolute;
+              right: 0px;
+              top: 55px;
+  
+              li {
+                  margin-right: 80px;
+                  a {
+                      text-decoration: none;
+                      color: $pri-text-color;
+                  }
+                  a:hover {
+                      color: $sec-text-color;
+                  }
+              }
+              .dropdown:hover .dropdown-content {
+                  display: flex;
+                  transition: 0.2s;
+              }
+              .dropdown-content {
+                  color: $sec-text-color;
+                  list-style-type: none;
+                  position: absolute;
+                  background-color: $pri-color;
+                  right: 20px;
+                  top: 20px;
+                  height: 40px;
+                  border-radius: 50px;
+                  border: 1px solid $pri-text-color;
+                  display: none;
+                  transition: 0.2s;
+  
+                  li {
+                      margin-top: 10px;
+                      margin-left: 40px;
+                  }
+              }
+          }
+          @mixin hamburger-line-config {
+            width: 20px;
+            height: 2px;
+            margin-top: 4px;
+            background-color: $pri-text-color;
+            transition: all 0.5s ease; 
+        }
+        .nav-hamburger {
+            position: absolute;
+            right: 30px;
+            top: 55px;
+            display: none;
+             .hamburger-line1 {
+                @include hamburger-line-config;
+             }
+             .hamburger-line2 {
+                @include hamburger-line-config;    
+             }
+             .hamburger-line3 {
+                @include hamburger-line-config;        
+             }
+        }
+        .nav-hamburger:hover {
+            cursor: pointer;
+        }
+        .toggleCl .hamburger-line1 {
+            transform: rotate(-45deg) translate(-4px,5px);
+          }
+          .toggleCl .hamburger-line2 {
+              opacity: 0;
+          }
+          .toggleCl .hamburger-line3 {
+              transform: rotate(45deg) translate(-4px,-5px);
+          }
+      }
+
+      .nav-helper {
+        color: white;
+        margin-top: 150px;
+        margin-left: 50px;
+
+      }
+}
+
+.benefit-section {
+    height: 650px;
+    .row {
+        margin-top: 100px;
+        margin-left: 75px;
+    }
+    i {
+        color: $sec-text-color;
+        margin-bottom: 20px;
+    }
+    h3 {
+        color: white;
+    }
+    p {
+        color: $pri-text-color;
+        width: 75%;
+    }
+    a {
+        text-decoration: none;
+        color: $sec-text-color;
+    }
+}
+
+.complete-section {
+    background-color: $pri-color-lighter;
+    height: 500px;
+    
+    .complete-text {
+        margin-top: 150px;
+        h2 {
+            color: white;
+            width: 90%;
+            margin-left: 50px;
+        }
+        p {
+            color: $pri-text-color;
+            width: 85%;
+            margin-top: 40px;
+            margin-left: 50px;
+        }
+    }
+
+    .complete-gallery {
+        .complete-image1 {
+            background-image: url(../images/forest-path.jpg);
+            background-size: cover;
+            width: 500px;
+            height: 300px;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        .complete-image2 {
+            z-index: 0;
+            position: relative;
+            bottom: 175px;
+            left: 125px;
+            background-image: url(../images/forest-road.jpg);
+            background-size: cover;
+            width: 500px;
+            height: 300px;
+        }
+    }
+}
+
+
+.marketing-section {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+    background-color: $sec-text-color;
+
+    button {
+        margin-left: 50px;
+        padding: 20px 30px 20px 30px;
+        border-radius: 5px;
+        background-color: transparent;
+        transition: 0.4s;
+    }
+    button:hover {
+        background-color: black;
+        color: wheat;
+    }
+}
+
+.footer {
+    height: 400px;
+    background-color: rgb(19,22,32);
+    display: grid;
+    place-items: center;
+    .footer-title {
+        display: flex;
+        text-decoration: none;
+        margin-right: 50px;
+    h1 {
+        font-family: 'Rowdies', sans-serif;
+        color: $sec-text-color;
+        text-decoration: none;
+        font-size: 40px;
+        margin-top: 25px;
+    }
+        .hexagon-icon {
+            background-image: url(../images/nares-logo.png);
+            background-size: cover;
+            width: 70px;
+            height: 80px;
+        }
+    }
+}
