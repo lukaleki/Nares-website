@@ -423,7 +423,7 @@ body {
   display: flex;
 }
 .gallery .gallery-rows .gallery-image5 {
-  background-image: url(./images/filter-image5.jpg);
+  background-image: url(./images/filter-image2.jpg);
   background-size: cover;
   margin: 15px;
   width: 400px;
@@ -454,7 +454,7 @@ body {
   display: flex;
 }
 .gallery .gallery-rows .gallery-image6 {
-  background-image: url(./images/filter-image6.jpg);
+  background-image: url(./images/filter-image3.jpg);
   background-size: cover;
   margin: 15px;
   width: 400px;
